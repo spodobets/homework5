@@ -16,14 +16,24 @@ body {
     justify-content: space-between;
 }
 
-@media screen and (max-width: 230px){
-    .logo {
-    margin: 24px 50px;
-    width: 119px;
-    justify-content: center;
-    }
+.responcive_header {
+    display: none;
 }
 
+@media screen and (max-width:240px) {
+    .header{
+    float: none;
+    display: block;
+    }
+    ul.menu {
+        display: none;
+    }
+
+    .responcive_header p .text1 .text2 {
+        display: flex;
+        justify-content: space-between;
+    }
+}
 .menu_item {
     font-size: 20px;
     line-height: 26px;
@@ -37,38 +47,32 @@ ul {
     margin: 50px 135px;
 }
 
-@media  screen and (max-width: 230px){
-    .ul {
-        display: none;
-    }
-}
-
 .image_group {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
     background-image: url(./images/Rectangle.jpg);
     background-size: cover;
-}
-
-
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    }
 
 .big_text h1{
-    height: 297px;
+    height: 237px;
     width: 1241px;
-    margin: 38px 100px;
+    margin: 0;
     font-weight: 400;
     line-height: 78.4px;
     font-family: 'tomorrow';
     font-size: 75px;
+    font-size: 5vw;
 }
 
 .sneakers {
     margin: 0px 32px 164px 100px;
     float: left;
-    width:288px;
-    height:288px;
+    width: 100%;
+    height: auto;
 }
 
 h2 {
@@ -81,6 +85,7 @@ h2 {
     height: 288px;
     width: 815px;
     margin-top: 158px;
+    font-size: 3vw;
 }
 
 .section2 {
@@ -107,6 +112,7 @@ h2 {
     font-family: 'tomorrow';
     font-size: 56px;
     font-style: white;
+    font-size: 5vw;
 }
 
 .section4 {
